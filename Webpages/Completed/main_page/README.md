@@ -1,5 +1,6 @@
 ## Edits
-Comment your edits in the files properly as follows:
+* Do proper indentation
+* Comment your edits in the files properly as follows:
 
 ### In HTML
 ```
