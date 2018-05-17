@@ -5295,11 +5295,12 @@ a.tag:hover {
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1); /* Changed */
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #4a4a4a;
   max-width: 100%;
   position: relative;
+  border-radius: 15px; /* Added */
 }
 
 .card-header {
@@ -9655,7 +9656,9 @@ label.panel-block:hover {
 }
 
 .section {
-  padding: 3rem 1.5rem;
+  padding-top: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 @media screen and (min-width: 1088px) {
