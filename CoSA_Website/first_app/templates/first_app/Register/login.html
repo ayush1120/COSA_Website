@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'first_app/Register/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'first_app/Register/css/bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'first_app/Register/css/mystyle.css' %}">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+        {% include 'first_app/Register/navbar.html' %}
+        <section class="section register-block register-section">
+            <div class="container">
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-half is-narrow">
+                        <br><br>
+                        <div class="card">
+                            <div class="card-content">
+                                <h1 class="title has-text-centered">
+                                    Register
+                                </h1>
+                                
+                                {% include "first_app/Register/RegisterForm.html" %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="level">
+                    <!-- Left Side -->
+                    <div class="level-left">
+                        <div class="level-item">
+                            <p>
+                                All Rights Reserved &copy; 2018 by
+                                <span>Council of Student Affairs</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Right Side -->
+                    <div class="level-right">
+                        <p class="level-item">
+                            <a href="#" class="social-icons">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </p>
+                        <p class="level-item">
+                            <a href="#" class="social-icons">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </p>
+                        <p class="level-item">
+                            <a href="#" class="social-icons">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

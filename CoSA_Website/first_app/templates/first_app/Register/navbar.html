@@ -1,0 +1,49 @@
+<nav class="navbar is-transparent">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+        </a>
+        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-white is-active">
+            Events
+          </a>
+          <a class="navbar-item has-text-white">
+            Clubs &amp; Socities
+          </a>
+          <a class="navbar-item has-text-white" href="{% url 'first_app:knowYC' %}">
+            Know Your Council
+          </a>
+          <a class="navbar-item has-text-white">
+            Feedback
+          </a>
+          <a class="navbar-item has-text-white">
+            Developers
+          </a>
+          <span class="navbar-item has-text-white">
+
+            {% if logged_in %}
+            <a class="button is-primary is-inverted" href="{% url 'first_app:Logout' %}">
+                    <span>Logout</span>
+                  </a>
+            {% else %}
+
+            <!-- Changed the below anchor tag to div -->
+            <div class="button is-primary is-inverted" href="">
+                    <span> <a href="{% url 'first_app:Login' %}">Login</a>
+                        <a href="{% url 'first_app:Register' %}"> / Register</a></span>
+                    </div>
+            {% endif %}
+            
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>

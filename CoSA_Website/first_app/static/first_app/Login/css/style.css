@@ -1,0 +1,10 @@
+.register-block {
+    background-color: #ffffffb7;
+    height: 90vh;
+}
+
+.register-section {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('adventure-alps-climb-1004119.jpg');
+    background-size: cover;
+    height: 90vh;
+}

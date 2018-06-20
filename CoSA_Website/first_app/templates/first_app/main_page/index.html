@@ -1,0 +1,334 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoSA - IIT Bhilai</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{% static 'first_app/main_page/third-party/css-bulma/css/bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'first_app/main_page/resources/css/mystyle.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Satisfy|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'first_app/main_page/third-party/bulma-carousel-master/dist/bulma-carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'first_app/main_page/third-party/animate-css/animate.css' %}">
+
+    <!-- Javascripts -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="{% static 'first_app/main_page/third-party/js/bulma-js.js' %}"></script>
+    <script src="{% static 'first_app/main_page/resources/js/script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'first_app/main_page/third-party/bulma-carousel-master/dist/bulma-carousel.min.js' %}"></script>
+    
+  </head>
+  <body>
+
+    
+  <!-- Header -->
+
+  <section class="hero is-info is-large has-carousel">
+    <div class="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true">
+      <div class='carousel-container'>
+        <div class='carousel-item has-background is-active'>
+          <img class="is-background" src="{% static 'first_app/main_page/resources/images/img1.jpg' %}" alt="" />
+        </div>
+        <div class='carousel-item has-background'>
+          <img class="is-background" src="{% static 'first_app/main_page/resources/images/img2.jpg' %}" alt="" />
+        </div>
+        <div class='carousel-item has-background'>
+          <img class="is-background" src="{% static 'first_app/main_page/resources/images/img3.jpg' %}" alt="" />
+        </div>
+      </div>
+
+      <!-- <div class="carousel-navigation is-overlay">
+        <div class="carousel-nav-left">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="carousel-nav-right">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+      </div> -->
+
+    </div>
+    <div class="hero-head">
+      {% include "first_app/main_page/navbar.html" %}
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-1 has-text-white">
+          Council of Student Affairs
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+
+  <section class="section news-section">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <p class="title">One</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            <br/>
+            <p><a href="#"><strong>Read More &rarr;</strong></a></p>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <p class="title">Two</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            <br/>
+            <p><a href="#"><strong>Read More &rarr;</strong></a></p>
+          </div>
+        </div>
+        <div class="tile is-4 is-parent">
+          <div class="tile is-child">
+            <p class="title">Three</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+            <br/>
+            <p><a href="#"><strong>Read More &rarr;</strong></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Club Section-->
+
+  <section class="section club-section">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile is-6 is-parent">
+          <div class="tile is-child">
+            <p class="title">Clubs &amp; Societies</p>
+            <div class='carousel carousel-animated carousel-animate-slide'>
+                <div class='carousel-container'>
+                  <div class='carousel-item has-background is-active'>
+                    <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" width="640" height="310" />
+                    <div class="title">Club #1</div>
+                  </div>
+                  <div class='carousel-item has-background'>
+                    <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" width="640" height="310" />
+                    <div class="title">Club #2 <a href="https://lasongbox.com">View More &rarr;</a></div>
+                  </div>
+                  <div class='carousel-item has-background'>
+                    <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg" alt="" width="640" height="310" />
+                    <div class="title">Club #3</div>
+                  </div>
+                  <div class='carousel-item has-background'>
+                    <img class="is-background" src="https://wikiki.github.io/images/life.jpg" alt="" width="640" height="310" />
+                    <div class="title">Club #4</div>
+                  </div>
+                </div>
+                <div class="carousel-navigation is-overlay">
+                  <div class="carousel-nav-left">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </div>
+                  <div class="carousel-nav-right">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+          </div>  
+        </div>
+
+        <div class="tile is-6 is-parent">
+          <div class="tile is-child">
+            <p class="title">Campus Tour</p>
+            <iframe width="560" height="310" src="https://www.youtube.com/embed/Kps4BNOT24Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Form -->
+  
+  <section class="section location-section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title">
+            Location
+          </h1>
+          <!--  Here goes the map code  -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.7358351755342!2d81.65752661493491!3d21.162908585925845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28db65364103d5%3A0x9ca0815dc09dac5f!2sIndian+Institute+of+Technology+Bhilai!5e0!3m2!1sen!2sin!4v1526024955852" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+        <div class="column">
+          <h1 class="title">
+            Contact Us
+          </h1>
+          <!--  Here goes the form  -->
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control has-icons-left">
+                <input class="input is-rounded" type="text" placeholder="Your name....">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                </span>
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input is-rounded" type="email" placeholder="Your email....">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Subject</label>
+              <div class="control">
+                <input class="input is-rounded" type="text" placeholder="Subject....">
+              </div>
+            </div>
+            
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea is-rounded" placeholder="Your message...."></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="button is-link is-rounded">Submit</button>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes -->
+  
+  <section class="section quotes-section">
+    <div class="container">
+      <div class="slideshow-container">
+        <!-- Testimonial #1 -->
+        <div class="mySlides animated zoomIn">
+          <!-- Photo of the person quoting -->
+          <div class="photo-quote has-text-centered">
+            <img src="{% static 'first_app/main_page/resources/images/testimonial.jpg' %}" alt="Test #1">
+          </div>
+
+          <!-- Qoute of the person -->
+          <div class="quote has-text-centered">
+            <p>&ldquo;I think being in love with life is a key to eternal youth.&rdquo;</p>
+          </div>
+
+          <!-- Name of the person -->
+          <div class="name-quote has-text-centered">
+            <p>&mdash; Doug Hutchison</p>
+          </div>
+        </div>
+
+        <!-- Testimonial #2 -->
+        <div class="mySlides animated zoomIn">
+          <!-- Photo of the person quoting -->
+          <div class="photo-quote has-text-centered">
+            <img src="{% static 'first_app/main_page/resources/images/testimonial-2.jpg' %}" alt="Test #1">
+          </div>
+  
+          <!-- Qoute of the person -->
+          <div class="quote has-text-centered">
+            <p>&ldquo;Learn from the mistakes of others. You can't live long enough to make them all yourself.&rdquo;</p>
+          </div>
+  
+          <!-- Name of the person -->
+          <div class="name-quote has-text-centered">
+            <p>&mdash; Eleanor Roosevelt</p>
+          </div>
+        </div>
+
+        <!-- Testimonial #3 -->
+        <div class="mySlides animated zoomIn">
+          <!-- Photo of the person quoting -->
+          <div class="photo-quote has-text-centered">
+            <img src="{% static 'first_app/main_page/resources/images/testimonial-3.jpg' %}" alt="Test #1">
+          </div>
+  
+          <!-- Qoute of the person -->
+          <div class="quote has-text-centered">
+            <p>&ldquo;Look at a day when you are supremely satisfied at the end. It’s not a day when you lounge around doing nothing; it’s when you’ve had everything to do, and you’ve done it&rdquo;</p>
+          </div>
+  
+          <!-- Name of the person -->
+          <div class="name-quote has-text-centered">
+            <p>&mdash; Margaret Thatcher</p>
+          </div>
+        </div>
+
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Footer -->   
+  
+  <footer class="footer">
+      <div class="container">
+        <div class="level">
+        <!-- Left Side -->
+          <div class="level-left">
+            <div class="level-item">
+              <p>
+                All Rights Reserved &copy; 2018 by <span>Council of Student Affairs</span>
+              </p>
+            </div>
+          </div>
+        <!-- Right Side -->  
+          <div class="level-right">
+              <p class="level-item">
+                <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+              </p>
+              <p class="level-item">
+                <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+              </p>
+              <p class="level-item">
+                <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+              </p>
+            </div>
+        </div>
+      </div>
+  </footer>
+
+
+  <script type="text/javascript">
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+  </script>
+
+  
+  </body>
+</html>

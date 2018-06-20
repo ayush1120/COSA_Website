@@ -1,0 +1,45 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Username</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input name='username' class="input" type="text" placeholder="Username">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Password</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input name='password' class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-key"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-grouped is-grouped-centered">
+        <div class="control">
+            <button class="button is-primary">Login</button>
+        </div>
+        <div class="control">
+            <!-- Changed below from button to link -->
+            <a href="{% url 'first_app:home' %}" class="button is-text">Cancel</a>
+        </div>
+    </div>
+
+
+</form>

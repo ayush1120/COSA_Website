@@ -1,0 +1,123 @@
+<a class="help is-danger">
+    {% if errors is not None %}
+        {{errors}}
+    {% else %}
+    {% endif %}
+</a>
+
+
+<form id="RegisterForm" action="" method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+        {{ field.as_hidden }}
+    {% endfor %}
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Name</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control is-expanded">
+                    <input id="first_name" class="input" type="text" placeholder="First Name">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control is-expanded">
+                    <input id="last_name" class="input" type="text" placeholder="Last Name">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Batch</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    <div class="select">
+                        <select id="batch">
+                            <option>2016-2020</option>
+                            <option>2017-2021</option>
+                            <option>2018-2022</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Username</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input id='username' class="input" type="text" placeholder="Username">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Email</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input id="email" class="input" type="email" placeholder="Email">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label">Password</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input id='password' class="input" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-key"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-grouped is-grouped-centered">
+        <div class="control">
+            <button id="registerSubmit" class="button is-primary">Register</button>
+        </div>
+        <div class="control">
+            <!-- Changed below from button to link -->
+            <a href="{% url 'first_app:home' %}" class="button is-text">Cancel</a>
+        </div>
+    </div>
+
+
+</form>
+
+<script>
+
+    
+    $('#registerSubmit').click(function() {
+
+        //alert('event listner working' + $('#first_name').val())
+        $('#{{form.first_name.auto_id}}').val($('#first_name').val());
+        $('#{{form.last_name.auto_id}}').val($('#last_name  ').val());
+        $('#{{form.username.auto_id}}').val($('#username').val());
+        $('#{{form.email.auto_id}}').val($('#email').val());
+        $('#{{form.password.auto_id}}').val($('#password').val());
+        
+
+    })
+
+
+</script>
