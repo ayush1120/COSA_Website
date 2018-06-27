@@ -32,7 +32,7 @@
 
 **Sitemap**
 
-![](C:\Users\Flame\Documents\GitHub\COSA_Website\Documentation\Screenshot.jpg)
+![](https://github.com/ayush1120/COSA_Website/blob/master/Documentation/Screenshot.jpg?raw=true)
 
 
 
