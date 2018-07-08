@@ -1,0 +1,19 @@
+{
+  "name": "cosa",
+  "version": "1.0.0",
+  "description": "CoSA website",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "bulma-extensions": "^2.2.1",
+    "cool-checkboxes-for-bulma.io": "^1.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "scripts": {
+    "compile-sass": "node-sass css/bulma.scss css/bulma.css -w"
+  },
+  "author": "TheRealMentor",
+  "license": "ISC"
+}
