@@ -9,7 +9,16 @@ html {
     box-shadow: 0 3px 6px rgba(118, 169, 218, 0.8);
 }
 
+/* Size of Header */
+.is-size-0 {
+    font-size: 4rem;
+    margin: 0 5.5rem;
+}
+
 /* Navbar */
+.navbar {
+    box-shadow: 0 3px 6px rgba(126, 126, 126, 0.199);
+}
 
 .navbar-brand {
     margin-left: 2rem;
@@ -231,3 +240,20 @@ html {
 .social-link:not(:last-child) {
     margin-right: 3rem;
 }
+
+/* Center images */
+.is-img-center {
+    margin: 0 auto;
+}
+
+/* Circular Images */
+.is-circular {
+    border-radius: 50%;
+}
+
+/* Add extra margin */
+.is-padded-vertically {
+    margin: 3rem 0;
+}
+
+
