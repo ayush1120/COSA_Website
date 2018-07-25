@@ -1,0 +1,73 @@
+@import "font.css";
+
+html {
+    font-family: "Circular Std Medium", sans-serif;
+}
+
+.input:focus, .input.is-focused, .input:active, .input.is-active, .textarea:focus, .textarea.is-focused, .textarea:active, .textarea.is-active {
+    border-color: #76A9DA;
+    box-shadow: 0 3px 6px rgba(118, 169, 218, 0.8);
+}
+
+/* Navbar */
+
+.navbar-brand {
+    margin-left: 2rem;
+}
+
+.navbar-end {
+    margin-right: 2rem;
+}
+
+/* Header */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,.2)), url('../img/hero-1.jpeg');
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+}
+
+.hero .title {
+    color: #fff;
+    font-size: 5rem;
+    font-family: "Circular Std Bold", sans-serif;
+}
+
+.hero .title span {
+    display: inline-block;
+}
+
+.hero .title-part-1 {
+    padding-left: 1rem;
+}
+
+.blue-back {
+    background-color: #76A9DA;
+    padding: 1rem;
+}
+
+/* Content */
+
+.content {
+    padding: 5rem 0;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    font-size: 0.85rem;
+    color: #95989A;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.5rem;
+    text-align: justify;
+}
+
+/* Center images */
+
+.image {
+    margin: auto;
+}
+
+/* Add extra margin */
+
+.is-padded-vertically {
+    margin: 3rem 0;
+}
