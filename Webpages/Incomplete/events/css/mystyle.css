@@ -30,7 +30,7 @@ html {
 
 .hero .title {
     color: #fff;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Circular Std Bold", sans-serif;
 }
 
@@ -50,7 +50,7 @@ html {
 /* Content */
 
 .content {
-    padding: 5rem 0;
+    padding: 3rem 0;
     margin-left: 7rem;
     margin-right: 7rem;
     font-size: 0.85rem;
