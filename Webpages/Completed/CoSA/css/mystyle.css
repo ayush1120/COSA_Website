@@ -12,7 +12,7 @@ html {
 /* Size of Header */
 .is-size-0 {
     font-size: 4rem;
-    margin: 0 5.5rem;
+    margin: 0 4.5rem;
 }
 
 /* Navbar */
@@ -340,4 +340,26 @@ p.subtitle {
     margin-top: 2rem;
     line-height: 1.6;
     word-spacing: 2px;
+}
+
+/* Clubs */
+.media-content .is-4 {
+    margin-bottom: 0.5rem;
+}
+
+.section-clubs .card .card-content .content {
+    font-family: 'Circular Std Book', Tahoma, sans-serif;
+    color: rgb(104, 104, 104);
+}
+
+.is-divider {
+    height: 1px;
+    background-color: rgb(196, 196, 196);
+    margin: 3rem auto;
+}
+
+.section-clubs .card {
+    -webkit-box-shadow: 0 3px 6px rgb(118, 170, 218);
+    box-shadow: 0 3px 6px rgb(118, 170, 218);
+    border-radius: 5px;
 }
