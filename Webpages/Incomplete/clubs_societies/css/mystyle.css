@@ -1,0 +1,257 @@
+@import "font.css";
+
+html {
+    font-family: "Circular Std Medium", sans-serif;
+}
+
+.input:focus, .input.is-focused, .input:active, .input.is-active, .textarea:focus, .textarea.is-focused, .textarea:active, .textarea.is-active {
+    border-color: #76A9DA;
+    box-shadow: 0 3px 6px rgba(118, 169, 218, 0.8);
+}
+
+/* Navbar */
+
+.navbar-brand {
+    margin-left: 2rem;
+}
+
+.navbar-end {
+    margin-right: 2rem;
+}
+
+/* Header */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0,0.2), rgba(0, 0, 0,.2)), url('../img/hero-1.jpeg');
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+}
+
+.hero .title {
+    color: #fff;
+    font-size: 5rem;
+    font-family: "Circular Std Bold", sans-serif;
+}
+
+.hero .title span {
+    display: inline-block;
+}
+
+.hero .title-part-1 {
+    padding-left: 1rem;
+}
+
+.blue-back {
+    background-color: #76A9DA;
+    padding: 1rem;
+}
+
+/* News */
+
+.section-news {
+    padding: 5rem 0;
+}
+
+.news {
+    padding: 2rem;
+}
+
+.news:first-child {
+    margin-left: 7rem;
+}
+
+.news:last-child {
+    margin-right: 7rem;
+}
+
+.news .news-title {
+    margin-bottom: 0.5rem;
+}
+
+.news .by-line {
+    font-size: 0.8rem;
+    color: #95989A;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.news .by-line .author {
+    color: #FFD23E;
+    font-weight: bold;
+}
+
+.news .by-line .date {
+    font-weight: bold;
+}
+
+.news .content {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    color: #646464;
+    text-align: justify;
+}
+
+/* Announcements */
+
+.section-announcement {
+    background-color: #F9F9F9;
+    padding: 5rem 0;
+}
+
+.section-announcement .clubs-title {
+    margin-bottom: 2.5rem;
+}
+
+.section-announcement .column {
+    margin-left: 4rem;
+}
+
+.section-announcement .clubs {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.announcements {
+    width: 80%;
+    overflow: auto;
+    height: 20.5rem;
+}
+
+.announcement:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
+.announcement-title {
+    margin-bottom: 0.5rem;
+}
+
+.announcement-content {
+    font-family: "Montserrat", sans-serif; 
+}
+
+/* Contact */
+
+.section-contact {
+    padding: 5rem 0;
+    position: relative;
+}
+
+.contact-form {
+    margin-left: 8rem;
+}
+
+.contact-form .field {
+    margin-bottom: 2rem;
+}
+
+.contact-form .textarea {
+    resize: none;
+}
+
+.contact-us {
+    display: inline-block;
+    font-size: 18.75rem;
+    font-family: 'Circular Std Black';
+    color: rgba(118, 170, 218, 0.3);
+    line-height: 200px;
+    letter-spacing: 1rem;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -10;
+}
+
+/* Footer */
+
+.footer {
+    color: #fff;
+    padding-bottom: 3rem; 
+}
+
+.footer-nav, .post-footer {
+    margin: auto 7rem;
+}
+
+.message-title, .menu-title, .newsletter-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.message-content, .bottom-nav, .newsletter-content p, .copyright {
+    font-family: "Montserrat", Tahoma, sans-serif;
+    font-size: .8rem;
+}
+
+.message-content {
+    word-spacing: 1.5px;
+    line-height: 1.45;
+    text-align: justify;
+}
+
+.bottom-nav {
+    color: #fff;
+    display: block;
+}
+
+.bottom-nav:not(:last-child) {
+    margin-bottom: .8rem;
+}
+
+.newsletter-content p {
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-content .control:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.post-footer .copyright, .post-footer .social-icons {
+    display: inline-block;
+}
+
+.post-footer {
+    margin-top: 2rem;
+}
+
+.copyright {
+    word-spacing: 1.5px;
+}
+
+.copyright span {
+    font-weight: 700;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 3rem;
+}
+
+/* Center images */
+
+.image {
+    margin: auto;
+}
+
+/* Circular Images */
+
+.is-circular {
+    border-radius: 50%;
+}
+
+/* Add extra margin */
+
+.is-padded-vertically {
+    margin: 3rem 0;
+}
+
+
+
+.card-footer {
+    margin-top: auto;
+}
